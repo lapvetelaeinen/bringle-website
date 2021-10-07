@@ -1,14 +1,16 @@
 <template>
-  <NuxtLink class="function" :to="link">
-    <div
-      :class="{ active: hover }"
-      @mouseover="hover = true"
-      @mouseleave="hover = false"
-    >
+  <div
+    class="function"
+    :class="{ active: hover }"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    @click="testFunction"
+  >
+    <div>
       <i :class="icon"></i>
       <p>{{ title }}</p>
     </div>
-  </NuxtLink>
+  </div>
 </template>
 
 <script>
@@ -22,6 +24,12 @@ export default {
     return {
       hover: false,
     };
+  },
+  methods: {
+    testFunction() {
+      const element = document.getElementById(this.link);
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+    },
   },
 };
 </script>

@@ -45,28 +45,28 @@
           class="func"
           title="Lagerhantering"
           icon="fas fa-cubes"
-          link="#lagerhantering"
+          link="lagerhantering"
         />
 
         <FunctionCard
           class="func"
           title="Kundsaldon"
           icon="fas fa-id-badge"
-          link="#kundsaldon"
+          link="kundsaldon"
         />
 
         <FunctionCard
           class="func"
           title="Verifierade leveranser"
           icon="fas fa-people-carry"
-          link="#leveranser"
+          link="leveranser"
         />
 
         <FunctionCard
           class="func"
           title="Digitalt växtpass"
           icon="fas fa-leaf"
-          link="#pass"
+          link="pass"
         />
       </div>
     </section>
