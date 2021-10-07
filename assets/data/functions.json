@@ -1,0 +1,26 @@
+{
+    "function1": {
+        "title": "Lagerhantering",
+        "image": "lager.png",
+        "description": "test etsat as hasdhas ojads jnsajf ksajdoa jsd onisadj oiassmd asdnbjpasd jn",
+        "align": "left"
+    },
+    "function2": {
+        "title": "Kundsaldon",
+        "image": "kunder.png",
+        "description": "aoisjdh jasdi as of hdsf jidsf baisudh oas fjh ud foiasjd afhuo doij sad ba",
+        "align": "right"
+    },
+    "function3": {
+        "title": "Verifierade leveranser",
+        "image": "leveranser.png",
+        "description": "hasuid masfdionas h aisodj oashd saiudh ashud foas dnuashd oasf noisahd asodij ",
+        "align": "left"
+    },
+    "function4": {
+        "title": "Digitalt växtpass",
+        "image": "pass.png",
+        "description": "hudsif aisuhd asndj asjn fudhif dsnfo oaiushs dn asio asubdihfdoj dsofi uiasnd oidsfn sdiufb ",
+        "align": "right"
+    }
+}

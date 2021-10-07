@@ -1,0 +1,13 @@
+$shadow: 3px 3px 3px rgba(0, 0, 0, 0.192);
+
+// FONTS
+
+@mixin primary-bold {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 800;
+}
+
+@mixin primary-regular {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+}
