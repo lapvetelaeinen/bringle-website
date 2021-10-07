@@ -1,5 +1,7 @@
 <template>
   <div class="wrapper">
+    <!-- Mobile nav -->
+    <MobileNav id="mobile-nav" />
     <!-- Navigation -->
     <section class="main-nav">
       <h1 class="logo">Bringle</h1>
@@ -132,6 +134,9 @@ body {
   overflow-y: scroll;
   background-color: #ece5f0;
 }
+#mobile-nav {
+  display: none;
+}
 
 .main-nav {
   display: flex;
@@ -166,6 +171,7 @@ body {
 
 .hero {
   position: relative;
+  background-repeat: no-repeat;
   width: 100%;
   height: min(56.25vw, 90vh);
   background-image: url("~@/assets/images/desktop-hero.jpg");
@@ -173,11 +179,11 @@ body {
   background-position-y: center;
 
   .hero-content {
-    margin-left: 30px;
+    margin-left: 55px;
     width: 45vw;
     position: absolute;
-    top: 60%;
-    transform: translateY(-60%);
+    top: 55%;
+    transform: translateY(-55%);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -265,6 +271,7 @@ h1 {
 .functions-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 50px;
   margin-bottom: 100px;
   h3 {
@@ -275,9 +282,12 @@ h1 {
   .functions {
     margin: 30px 30px;
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 1fr 1fr;
     grid-gap: 25px;
+    p {
+      font-size: 17px;
+    }
   }
 }
 
@@ -322,7 +332,12 @@ h1 {
       left: 50%;
       transform: translate(-50%, -50%);
       h1 {
+        font-size: 40px;
         text-shadow: 4px 4px 3px rgb(0, 0, 0);
+      }
+      .btn {
+        flex: 1;
+        font-size: 20px;
       }
       #btn-2 {
         background-color: rgba(29, 69, 179, 0.637);
@@ -332,6 +347,10 @@ h1 {
 
   .main-nav {
     display: none;
+  }
+
+  #mobile-nav {
+    display: block;
   }
 
   .intro-section {

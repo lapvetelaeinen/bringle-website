@@ -18,7 +18,7 @@ export default {
     description: String,
     direction: String,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -37,7 +37,7 @@ p {
   margin-top: 15px;
 }
 img {
-  margin-top: -20px;
+  margin-top: 25px;
   width: 50%;
   height: auto;
 }
@@ -48,7 +48,7 @@ img {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(150px, auto);
     grid-gap: 20px;
-    grid-template-areas: 'image title';
+    grid-template-areas: "image title";
     margin-bottom: 140px;
   }
   .text-box {
@@ -68,7 +68,7 @@ img {
   }
 
   .left {
-    grid-template-areas: 'title image';
+    grid-template-areas: "title image";
   }
 }
 </style>
