@@ -1,5 +1,5 @@
 <template>
-  <a class="function" href="">
+  <NuxtLink class="function" :to="link">
     <div
       :class="{ active: hover }"
       @mouseover="hover = true"
@@ -8,7 +8,7 @@
       <i :class="icon"></i>
       <p>{{ title }}</p>
     </div>
-  </a>
+  </NuxtLink>
 </template>
 
 <script>
@@ -16,6 +16,7 @@ export default {
   props: {
     icon: String,
     title: String,
+    link: String,
   },
   data() {
     return {

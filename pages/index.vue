@@ -39,20 +39,32 @@
     <section class="functions-section">
       <h3>Vi har verktygen som du behöver</h3>
       <div class="functions">
-        <FunctionCard class="func" title="Lagerhantering" icon="fas fa-cubes" />
+        <FunctionCard
+          class="func"
+          title="Lagerhantering"
+          icon="fas fa-cubes"
+          link="#lagerhantering"
+        />
 
-        <FunctionCard class="func" title="Kundsaldon" icon="fas fa-id-badge" />
+        <FunctionCard
+          class="func"
+          title="Kundsaldon"
+          icon="fas fa-id-badge"
+          link="#kundsaldon"
+        />
 
         <FunctionCard
           class="func"
           title="Verifierade leveranser"
           icon="fas fa-people-carry"
+          link="#leveranser"
         />
 
         <FunctionCard
           class="func"
           title="Digitalt växtpass"
           icon="fas fa-leaf"
+          link="#pass"
         />
       </div>
     </section>
@@ -80,7 +92,7 @@
         direction="right"
       />
       <Function
-        id="växtpass"
+        id="pass"
         :title="functions.function4.title"
         :description="functions.function4.description"
         :image="functions.function4.image"
