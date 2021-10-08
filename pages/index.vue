@@ -6,9 +6,15 @@
     <section class="main-nav">
       <h1 class="logo">Bringle</h1>
       <ul>
-        <li><a href="#">Om</a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="#">Beställ</a></li>
+        <li>
+          <nuxt-link to="/about">Om</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/contact">Kontakt</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/order">Beställ</nuxt-link>
+        </li>
       </ul>
     </section>
     <!-- Hero -->
@@ -17,14 +23,25 @@
         <h1 class="heading">Ha stenkoll på dina kärror</h1>
         <div class="btn-container">
           <a href="#" class="btn">Se video</a>
-          <a href="#" class="btn" id="btn-2">Kontakta oss</a>
+          <nuxt-link to="/contact" class="btn" id="btn-2"
+            >Kontakta oss</nuxt-link
+          >
         </div>
       </div>
     </section>
     <!-- Intro -->
     <section class="intro-section">
       <div class="img-container">
-        <img src="~/assets/images/laptopphone.png" alt="phone and laptop" />
+        <img
+          src="~/assets/images/laptopphone.png"
+          alt="phone and laptop"
+          id="desktop"
+        />
+        <img
+          src="~/assets/images/devices-mobile.png"
+          alt="phone and laptop"
+          id="mobile"
+        />
       </div>
       <div class="text-container">
         <h3>Ordning och reda</h3>
@@ -244,7 +261,14 @@ h1 {
   .img-container {
     flex: 1;
 
-    img {
+    #desktop {
+      margin-top: 25px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    #mobile {
+      display: none;
       margin-top: 25px;
       max-width: 100%;
       height: auto;
@@ -325,7 +349,8 @@ h1 {
     .hero-content {
       align-items: center;
       margin: 0;
-      width: 70vw;
+      padding: 0 30px;
+      width: 100%;
       text-align: center;
       position: absolute;
       top: 50%;
@@ -335,9 +360,19 @@ h1 {
         font-size: 40px;
         text-shadow: 4px 4px 3px rgb(0, 0, 0);
       }
+      .btn-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+      }
       .btn {
         flex: 1;
         font-size: 20px;
+        margin: 0;
+        padding: 10px;
+        margin: 10px;
       }
       #btn-2 {
         background-color: rgba(29, 69, 179, 0.637);
@@ -354,13 +389,21 @@ h1 {
   }
 
   .intro-section {
-    align-items: start;
+    align-items: center;
     flex-direction: column-reverse;
     margin-bottom: 10px;
     .img-container {
       max-width: 70%;
       height: auto;
       margin-top: 10px;
+
+      #desktop {
+        display: none;
+      }
+
+      #mobile {
+        display: block;
+      }
     }
     .text-container {
       h3 {

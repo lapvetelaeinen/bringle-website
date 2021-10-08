@@ -14,11 +14,10 @@ div {
   z-index: 1;
   background: rgb(0, 53, 88);
   width: 100%;
-  text-align: center;
-  vertical-align: middle;
 }
 i {
   padding-block: 15px;
+  padding-left: 20px;
   font-size: 30px;
   color: #ddd;
 }
