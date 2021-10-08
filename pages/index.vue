@@ -4,16 +4,16 @@
     <MobileNav id="mobile-nav" />
     <!-- Navigation -->
     <section class="main-nav">
-      <h1 class="logo">Bringle</h1>
+      <nuxt-link to="/" class="logo"><h1>Bringle</h1></nuxt-link>
       <ul>
         <li>
-          <nuxt-link to="/about">Om</nuxt-link>
+          <nuxt-link to="/about" class="nav-link">Om</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contact">Kontakt</nuxt-link>
+          <nuxt-link to="/contact" class="nav-link">Kontakt</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/order">Beställ</nuxt-link>
+          <nuxt-link to="/order" class="nav-link">Beställ</nuxt-link>
         </li>
       </ul>
     </section>
@@ -163,16 +163,20 @@ body {
   width: 100%;
   z-index: 99;
   padding: 15px 50px;
+
   ul {
     display: flex;
     list-style: none;
   }
-  a {
+  .nav-link {
     @include primary-regular;
     color: #ddd;
     text-decoration: none;
-    margin-left: 100px;
     font-size: 25px;
+    margin-left: 100px;
+  }
+  .logo {
+    text-decoration: none;
   }
   h1 {
     @include primary-bold;
